@@ -43,3 +43,10 @@ func getAgeAndCongratulate(name: String) -> Int {
 
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(friend2)
+
+func agingAway(name: String, age: Int, years: Int) -> Int{
+    var newAge = age + years
+    print("Look at you \(name), you're \(age) years old now? Wow, in \(years) years, you will be \(newAge) years old")
+    return newAge
+}
+agingAway("Steve", age: 30, years: 10)
